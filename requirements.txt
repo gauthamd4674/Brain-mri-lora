@@ -1,0 +1,27 @@
+# Brain MRI LoRA Fine-Tuning — Requirements
+# Install with: pip install -r requirements.txt
+# Note: torch must be installed separately with the correct CUDA version.
+# See: https://pytorch.org/get-started/locally/
+# Example (CUDA 12.4): pip install torch torchvision --index-url https://download.pytorch.org/whl/cu124
+
+# Core ML
+torch>=2.6.0
+torchvision>=0.21.0
+accelerate>=1.13.0
+diffusers>=0.37.1
+transformers>=5.5.4
+peft>=0.18.1
+safetensors>=0.7.0
+tokenizers>=0.22.0
+
+# HuggingFace
+huggingface-hub>=1.10.0
+
+# Data / Visualization
+pandas>=2.2.0
+matplotlib>=3.10.0
+Pillow>=12.0.0
+tqdm>=4.67.0
+
+# Demo App
+gradio>=6.12.0
