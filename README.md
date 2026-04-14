@@ -168,6 +168,6 @@ VAE Decoder (frozen, fp16)
 
 ---
 
-## 📄 License
+##  License
 
 This project is for academic/educational use. The base model (SD v1.5) is subject to the [CreativeML Open RAIL-M License](https://huggingface.co/spaces/CompVis/stable-diffusion-license).
