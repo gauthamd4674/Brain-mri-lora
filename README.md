@@ -1,10 +1,10 @@
-# 🧠 Brain MRI Generator — Stable Diffusion + LoRA Fine-Tuning
+#  Brain MRI Generator — Stable Diffusion + LoRA Fine-Tuning
 
 > Fine-tuning Stable Diffusion v1.5 with LoRA on a Brain Tumor MRI dataset to generate synthetic, class-conditioned MRI images. Includes a 4-tab Gradio demo app.
 
 ---
 
-## 📌 Project Overview
+##  Project Overview
 
 This project implements a complete **text-to-MRI generation pipeline** using:
 - **Stable Diffusion v1.5** as the base generative model
@@ -14,7 +14,7 @@ This project implements a complete **text-to-MRI generation pipeline** using:
 
 ---
 
-## 🗂️ Project Structure
+##  Project Structure
 
 ```
 ├── app.py                          # Gradio demo app (4 tabs)
@@ -43,7 +43,7 @@ This project implements a complete **text-to-MRI generation pipeline** using:
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### 1. Install Dependencies
 ```bash
@@ -88,14 +88,14 @@ Then open **http://127.0.0.1:7860** in your browser.
 
 ---
 
-## 🖥️ Demo App Tabs
+##  Demo App Tabs
 
 | Tab | Description |
 |-----|-------------|
-| ✏️ **Free Prompt** | Generate an MRI from any custom text description |
-| 🔬 **Disease Conditioning** | Pick a condition + severity, prompt is auto-built |
-| 🎨 **Style Control** | Choose MRI sequence (T1/T2/FLAIR) + brain region |
-| 📊 **Base vs LoRA** | Side-by-side comparison before/after fine-tuning |
+|  **Free Prompt** | Generate an MRI from any custom text description |
+|  **Disease Conditioning** | Pick a condition + severity, prompt is auto-built |
+|  **Style Control** | Choose MRI sequence (T1/T2/FLAIR) + brain region |
+|  **Base vs LoRA** | Side-by-side comparison before/after fine-tuning |
 
 ---
 
@@ -116,7 +116,7 @@ Then open **http://127.0.0.1:7860** in your browser.
 
 ---
 
-## 📊 Results
+##  Results
 
 - **Training loss** converges from ~0.5 → ~0.08 over 3 epochs
 - **CLIP similarity score** measured against class-specific prompts
@@ -132,7 +132,7 @@ Then open **http://127.0.0.1:7860** in your browser.
 
 ---
 
-## 📦 Sharing the LoRA Weights
+##  Sharing the LoRA Weights
 
 The trained LoRA weights (`lora_best.safetensors`, ~3 MB) are not included in this repo due to size limits. You can:
 - Upload to [HuggingFace Hub](https://huggingface.co/) and reference here
@@ -140,7 +140,7 @@ The trained LoRA weights (`lora_best.safetensors`, ~3 MB) are not included in th
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 
 ```
 Text Prompt
@@ -160,7 +160,7 @@ VAE Decoder (frozen, fp16)
 
 ---
 
-## 📋 Requirements
+##  Requirements
 
 - Python 3.10+
 - NVIDIA GPU with 6+ GB VRAM (CUDA 12.x)
